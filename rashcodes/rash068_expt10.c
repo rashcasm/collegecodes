@@ -1,8 +1,6 @@
-//EXPERIMENT 10
-
 #include <stdio.h>
-void reverse(int num)
-{
+int reverse(int num)
+{   
     int ori,d,rev;
     ori=num;
     rev=0;
@@ -12,13 +10,14 @@ void reverse(int num)
         rev=rev*10+d;
         num=num/10;
     }
-    printf("\nThe reverse of %d is %d", ori, rev);
+    return rev;
 }
 void main()
 {
     printf("Rashmin Chaudhari\nRoll no: 51\n");
-    int num;
+    int num, rev;
     printf("Enter any number: ");
     scanf("%d", &num);
-    reverse(num);
+    rev = reverse(num);
+    printf("\nThe reverse of %d is %d", num, rev);
 }
