@@ -44,6 +44,7 @@ int main() {
             break;
         
         case  4:
+            exit(0);
             printf("Exiting...\n");
             break;
         
