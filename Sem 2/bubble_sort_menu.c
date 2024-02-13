@@ -17,8 +17,9 @@ int main() {
     int arr[50];
     int size;
     int ch;
+    printf("\nMENU\n1. accept array\n2. sort array\n3. display array\n4. exit\n");
     while(1){
-    printf("\nMENU\n1. accept array\n2. sort array\n3. display array\n4. exit\nEnter choice: ");
+    printf("-----------------------\nEnter choice: ");
     scanf("%d", &ch);
 
     switch(ch) {
@@ -33,7 +34,7 @@ int main() {
         
         case  2:
             sort(arr, size);
-            printf("\nSorted...");
+            printf("\nSorted...\n");
             break;
                 
         case  3:
@@ -41,6 +42,7 @@ int main() {
             for(int i=0; i<size; i++) {
                 printf("%d ", arr[i]);
             }
+            printf("\n");
             break;
         
         case  4:
